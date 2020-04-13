@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+body {
+    margin: 0;
+    background: whitesmoke;
+    font-family: "montserrat", sans-serif;
+    font-weight: 300;
+}
+
+.head-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background: #002830;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.logo {
+    float: left;
+    padding: 10px 0;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 40px;
+    font-size: 20px;
+    /*the position (set to relative) below is added so we can add effect 
+    to the navbar latter. This effect is done using
+    "nav a::before below*/
+    position: relative;
+}
+
+
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+nav a:hover {
+    color: yellowgreen;
+}
+
+/* Below is the animation to the navbar*/
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    width: 0;
+
+    transition: all ease-in-out 350ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+/*///////////////////////////////////////*/
+
+
+
+.second-container {
+    background-image: url(gemkow2.png);
+    height: 600px;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.big-text {
+    background-color: whitesmoke;
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+    padding: 80px 30px;
+
+}
+
+.text-box {
+    font-size: 14px;
+    font-weight: normal;
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    margin: 30px;
+}
+
+.first{
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    align-items: center;
+    margin-right: 20px;
+    margin-top: 80px;
+    height: auto;
+    width: 50%;
+    font-size: 20px;
+    text-align: center;
+    text-shadow: silver ;
+    background-color: white;
+    box-shadow: 0px 10px 10px #999;
+
+}
+
+.first p{
+    margin: 20px;
+}
+
+.first h2{
+    color: red;
+    float: top left;
+    position: relative;
+    margin-bottom: 0;
+}
+
+.first:hover {
+    transform: rotate(-7deg);
+}
+
+.second {
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    align-items: center;
+    margin-right: 20px;
+    margin-top: 0;
+    height: auto;
+    width: 50%;
+    font-size: 20px;
+    text-align: center;
+    text-shadow: silver ;
+    background-color: white;
+    box-shadow: 0px 10px 10px #999;
+
+}
+
+.second p{
+    margin: 20px;
+}
+
+.second h2{
+    color: green;
+    float: top left;
+    position: relative;
+    margin-bottom: 0;
+}
+
+.third{
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    align-items: center;
+    margin-right: 20px;
+    margin-top: 80px;
+    height: auto;
+    width: 50%;
+    font-size: 20px;
+    text-align: center;
+    text-shadow: silver ;
+    background-color: white;
+    box-shadow: 0px 10px 10px #999;
+
+}
+
+.third p{
+    margin: 20px;
+}
+
+.third h2{
+    color: blue;
+    float: top left;
+    position: relative;
+    margin-bottom: 0;
+}
+
+.third:hover {
+    transform: rotate(7deg);
+}
+
+.blue-area {
+    background-color: #025fa7;
+}
+
+
+.area {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    background-color: #025fa7;
+}
+
+.accordion-sec {
+    font-size: 50px;
+    font-weight: 800;
+    color: white;
+    padding-left: 50px;
+    padding-right: 160px;
+    padding-top: 30px;
+}
+
+.support {
+    font-size: 26px;
+    text-align: center;
+    font-weight: 800; 
+    margin-bottom: 25px;
+}
+
+.support-box {
+    display: inline-block;
+    justify-content: center;
+    width: 500px;
+    height: 200px;
+    background-color: lightgrey;
+    margin: 20px;
+}
+
+.support-box img{
+    width: 100px;
+    height: 100px;
+    float: left;
+    border-radius: 50%;
+    padding: 30px;
+}
+
+.support-box p{
+    font-size: 19px;
+    text-align: center;
+    padding: 30px;
+}
+
+.last {
+    text-align: center;
+}
+
+.fa-facebook-square {
+    color: #3B5998;
+  }
+  
+  .fa-twitter-square {
+    color: #55ACEE;
+  }
+
+  .fa-instagram-square {
+    color: #E1306C;
+  }
+  
+  /*This section covers the footer*/
+
+  .footer {
+      background: #002830;
+      color: white;
+      height: 350px;
+      position: relative;
+  }
+
+  .footer .main-footer {
+      /*border: 1px solid red;*/
+      height: 320px;
+      display: flex;
+  }
+
+  .footer .first-footer {
+      flex: 1;
+      /*border: 1px solid white;*/
+  }
+
+  .about {
+      padding: 10px 20px;
+  }
+
+  /* note: display:block to stack them on top one another
+display: inline-block. makes them block on the same line*/
+
+  .footer-contact span{
+      display:  block;
+      padding: 2px;
+  }
+  .footer-social a{
+      border: 1px solid gray;
+      width: 45px;
+      height: 41px;
+      padding-top: 5px;
+      margin-right: 5px;
+      margin-top: 10px;
+      display: inline-block;
+      border-radius: 5px;
+      text-align: center;
+      transition: all 3ms;
+      
+  }
+
+
+  .footer-social a:hover {
+      border: 2px solid white;
+      transition: all 3ms;
+  }
+
+  .footer-social a:focus {
+      outline: none;
+  }
+
+  .links h2{
+      margin-top: 25px;
+      padding: 20px;
+  }
+
+  .links a{
+      display: block;
+      margin-bottom: 10px;
+      font-size: 18px;
+      color: white;
+      list-style: none;
+      text-decoration: none;
+  }
+  
+  .links a:hover {
+      color: gold;
+  }
+
+  .contact h2{
+      padding: 20px;
+  }
+
+  .text-input{
+      display: block;
+      background: #272727;
+      color: #bebdbd;
+      margin-bottom: 10px;
+      line-height: 1.5rem;
+      border: none;
+      font-size: 20px;
+      padding-left: 20px;
+      
+  }
+
+  .footer .last-footer {
+      background: black;
+      color: white;
+      font-size: 14px;
+      height: 30px;
+      text-align: center;
+      position: absolute;
+      left: 0px;
+      bottom: 0px;
+      width: 100%;
+      padding-top: 20px;
+  }
